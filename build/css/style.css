@@ -832,20 +832,20 @@ button,
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  row-gap: 10px;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
   -webkit-margin-before: 0;
   margin-block-start: 0;
   -webkit-margin-after: 0;
   margin-block-end: 0;
-  margin-right: -27px;
-  padding: 0 10px 0 20px;
+  margin-left: -12px;
 }
 
 .header__item {
   list-style-type: none;
   width: 225px;
-  margin-right: 27px;
+  margin-left: 25px;
 }
 
 .header__email,
@@ -921,13 +921,12 @@ button,
 
   .header__list {
     margin-top: 10px;
-    margin-right: -10px;
-    padding-right: 0;
+    margin-right: 30px;
   }
 
   .header__item {
     width: auto;
-    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .header__email svg,
@@ -976,6 +975,6 @@ button,
 
   .header__list {
     margin-top: 5px;
-    margin-right: -20px;
+    margin-right: 20px;
   }
 }
