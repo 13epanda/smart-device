@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: $black-pearl-to-bottom;
+
+  @include vp-1023 {
+    position: relative;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+.header__logo {
+  width: 215px;
+  height: 55px;
+  flex-shrink: 0;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-right: -27px;
+  padding: 0 10px 0 20px;
+
+  @include vp-1023 {
+    margin-top: 10px;
+    margin-right: -10px;
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+    margin-right: -20px;
+  }
+}
+
+.header__item {
+  list-style-type: none;
+  width: 225px;
+  margin-right: 27px;
+
+  @include vp-1023 {
+    width: auto;
+    margin-right: 40px;
+  }
+}
+
+.header__email,
+.header__phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-alice-blue;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-deep-sky-blue;
+    outline: none;
+  }
+}
+
+.header__email svg,
+.header__phone svg {
+  margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+}
+
+.header__email p,
+.header__phone p {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.header__button {
+  flex-shrink: 0;
+  margin-top: 5px;
+  margin-right: 60px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
