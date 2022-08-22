@@ -46,60 +46,103 @@
       <footer>
         <section class="footer">
           <div class="footer__wrapper container">
-            <a class="footer__logo">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo-circuit.svg">
-                <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип магазина Smart Device.">
-              </picture>
-            </a>
-            <ul class="footer__social-list">
-              <li class="footer__item">
-                <a class="footer__pintrest" href="mailto:info@sd.ru" aria-label="Наша почта: info@sd.ru.">
+            <div class="footer__main">
+              <a class="footer__logo">
+                <picture>
+                  <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип магазина Smart Device.">
+                </picture>
+              </a>
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a href="#" aria-label="Перейти на страницу в Pinterest.">
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite_auto.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" aria-label="Перейти на страницу в Одноклассниках.">
+                    <svg width="11" height="19">
+                      <use xlink:href="img/sprite_auto.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" aria-label="Перейти на страницу в Вконтакте.">
+                    <svg width="19" height="11">
+                      <use xlink:href="img/sprite_auto.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__title">Разделы сайта</h3>
+              <!--
+                 При инициализации accordion.js
+                 добавляются классы footer_button--mobile и footer_button--closed
+                 при клике на кнопку класс меняется на footer_button--opened и обратно
+               -->
+              <button class="footer_button">
+                <span class="footer__closed">
                   <svg width="20" height="20">
-                    <use xlink:href="img/sprite_auto.svg#email"></use>
+                    <use xlink:href="img/sprite_auto.svg#plus"></use>
                   </svg>
-                  <p>info@sd.ru</p>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="header__phone" href="tel:+74950005252" aria-label="Наш телефон: +7 (495) 000 52 52.">
-                  <svg width="20" height="20">
-                    <use xlink:href="img/sprite_auto.svg#phone"></use>
+                </span>
+                <span class="footer__opened">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#minus"></use>
                   </svg>
-                  <p>+7 (495) 000 52 52</p>
-                </a>
-              </li>
-            </ul>
-            <ul class="footer__menu">
-              <li class="footer__item">
-                <a>О Компаниии</a>
-              </li>
-              <li class="footer__item">
-                <a>Продукты</a>
-              </li>
-              <li class="footer__item">
-                <a>Производство печатных плат</a>
-              </li>
-              <li class="footer__item">
-                <a>Монтаж печатных плат</a>
-              </li>
-              <li class="footer__item">
-                <a>Комплектующие</a>
-              </li>
-              <li class="footer__item">
-                <a>Доставка</a>
-              </li>
-              <li class="footer__item">
-                <a>Контакты</a>
-              </li>
-            </ul>
-            <div class="footer__contacts">
-              <h3 class="footer__title"></h3>
+                </span>
+              </button>
               <ul class="footer__list">
-                <li>г. Мытищи, Олимпийский проспект, д.10</li>
-                <li>+7 (495) 589-40-50</li>
-                <li>+7 (925) 389-58-29</li>
-                <li>+7 (925) 364-78-13</li>
+                <li class="footer__item">
+                  <a>О Компаниии</a>
+                </li>
+                <li class="footer__item">
+                  <a>Продукты</a>
+                </li>
+                <li class="footer__item">
+                  <a>Производство печатных плат</a>
+                </li>
+                <li class="footer__item">
+                  <a>Монтаж печатных плат</a>
+                </li>
+                <li class="footer__item">
+                  <a>Комплектующие</a>
+                </li>
+                <li class="footer__item">
+                  <a>Доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a>Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__contacts">
+              <h3 class="footer__title">Наш офис</h3>
+              <!--
+                 При инициализации accordion.js
+                 добавляются классы footer_button--mobile и footer_button--closed
+                 при клике на кнопку класс меняется на footer_button--opened и обратно
+               -->
+              <button class="footer_button">
+                <span class="footer__closed">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#plus"></use>
+                  </svg>
+                </span>
+                <span class="footer__opened">
+                  <svg width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#minus"></use>
+                  </svg>
+                </span>
+              </button>
+              <ul class="footer__list">
+                <li class="footer__item">г. Мытищи, Олимпийский проспект, д.10</li>
+                <li class="footer__item">+7 (495) 589-40-50</li>
+                <li class="footer__item">+7 (925) 389-58-29</li>
+                <li class="footer__item">+7 (925) 364-78-13</li>
               </ul>
             </div>
           </div>
