@@ -1288,19 +1288,23 @@ button,
     cursor: pointer;
   }
 
-  .footer_button--closed .footer__opened {
+  .footer_button--mobile .footer__opened {
     display: none;
   }
 
-  .footer_button--closed ~ .footer__list {
+  .footer_button--mobile ~ .footer__list {
     display: none;
   }
 
-  .footer_button--opened .footer__closed {
+  .footer_button--active .footer__closed {
     display: none;
   }
 
-  .footer_button--opened ~ .footer__list {
+  .footer_button--active .footer__opened {
+    display: block;
+  }
+
+  .footer_button--active ~ .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

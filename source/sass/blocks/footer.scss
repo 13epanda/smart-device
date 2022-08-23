@@ -218,25 +218,31 @@
   }
 }
 
-.footer_button--closed .footer__opened {
-   @include vp-767 {
-     display: none;
-   }
-}
-
-.footer_button--closed ~ .footer__list {
+.footer_button--mobile .footer__opened {
   @include vp-767 {
     display: none;
   }
 }
 
-.footer_button--opened .footer__closed {
+.footer_button--mobile ~ .footer__list {
   @include vp-767 {
     display: none;
   }
 }
 
-.footer_button--opened ~ .footer__list {
+.footer_button--active .footer__closed {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.footer_button--active .footer__opened {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.footer_button--active ~ .footer__list {
   @include vp-767 {
     display: flex;
   }
