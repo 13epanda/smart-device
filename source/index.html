@@ -42,6 +42,26 @@
         </section>
       </header>
       <main>
+        <section class="main-screen">
+          <div class="main-screen__bg">
+            <div class="main-screen__shadow"></div>
+            <!-- 1х: 1920px; 2x: 3840px -->
+            <picture>
+              <source type="image/webp" media="(max-width: 770px)" srcset="img/tablet/main-bg-tablet.webp 1x, img/tablet/main-bg-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/desktop/main-bg.webp 1x, img/desktop/main-bg@2x.webp 2x">
+
+              <source media="(max-width: 770px)" srcset="img/tablet/main-bg-tablet.jpg 1x, img/tablet/main-bg-tablet@2x.jpg 2x">
+              <img src="img/desktop/main-bg.jpg" srcset="img/desktop/main-bg@2x.jpg 2x" width="1920" height="880" alt="Печатная плата.">
+            </picture>
+          </div>
+          <div class="container">
+            <div class="main-screen__content">
+              <h1>Печатные платы</h1>
+              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <a class="btn-second"></a>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <section class="footer">
