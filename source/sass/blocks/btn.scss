@@ -115,4 +115,9 @@
     background-color: $color-deep-sky-blue;
     color: $color-alice-blue;
   }
+
+  @include vp-767 {
+    width: 160px;
+    height: 35px;
+  }
 }
