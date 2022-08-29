@@ -1661,6 +1661,10 @@ button,
   display: none;
 }
 
+.about__full-tablet {
+  display: inline;
+}
+
 .about__content button {
   margin-top: 45px;
 }

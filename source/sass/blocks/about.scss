@@ -84,6 +84,8 @@
 }
 
 .about__full-tablet {
+  display: inline;
+
   @include vp-767 {
     display: none;
   }
