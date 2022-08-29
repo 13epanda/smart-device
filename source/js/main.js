@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  getPhoneMask();
   accordion();
   changeVisibility();
   smoothScroll();
@@ -26,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    getPhoneMask();
   });
 });
 
