@@ -100,6 +100,7 @@
   &:hover,
   &:focus {
     background-color: $color-deep-sky-blue;
+    outline: none;
   }
 }
 
@@ -222,6 +223,7 @@
   &:hover,
   &:focus {
     color: $color-deep-sky-blue;
+    outline: none;
   }
 }
 

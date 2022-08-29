@@ -56,10 +56,12 @@
   &:focus {
     background-color: $color-white;
     color: $color-black-pearl;
+    outline: none;
   }
 
   &:active {
     background-color: $color-black-pearl-2;
+    outline: none;
   }
 }
 
@@ -92,10 +94,12 @@
   &:hover,
   &:focus {
     background-color: $color-black-pearl;
+    outline: none;
   }
 
   &:active {
     background-color: $color-black-pearl-2;
+    outline: none;
   }
 }
 
@@ -120,6 +124,7 @@
   &:focus {
     background-color: $color-alice-blue;
     color: $color-black-pearl;
+    outline: none;
   }
 }
 
@@ -144,6 +149,7 @@
   &:focus {
     background-color: $color-deep-sky-blue;
     color: $color-alice-blue;
+    outline: none;
   }
 
   @include vp-767 {
