@@ -4,7 +4,7 @@ const accordion = () => {
   for (let btn of btns) {
     btn.classList.add('footer_button--mobile');
 
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
       const activeBtns = document.querySelectorAll('.footer_button--active');
       if (btn.classList.contains('footer_button--active')) {
         for (let activeBtn of activeBtns) {

@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {accordion} from './modules/accordion';
 import {changeVisibility} from './modules/visibility';
-import {smoothScroll} from "./modules/smooth-scroll";
+import {smoothScroll} from './modules/smooth-scroll';
+import {getPhoneMask} from './modules/phone-mask';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  getPhoneMask();
   accordion();
   changeVisibility();
   smoothScroll();
