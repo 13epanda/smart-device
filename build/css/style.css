@@ -1699,11 +1699,19 @@ button,
   color: #041827;
 }
 
-.about__full {
+.about__full--closed {
   display: none;
 }
 
-.about__full-tablet {
+.about__full--opened {
+  display: block;
+}
+
+.about__full-tablet--closed {
+  display: inline;
+}
+
+.about__full-tablet--opened {
   display: inline;
 }
 
@@ -2463,7 +2471,7 @@ button,
     line-height: 19px;
   }
 
-  .about__full-tablet {
+  .about__full-tablet--closed {
     display: none;
   }
 

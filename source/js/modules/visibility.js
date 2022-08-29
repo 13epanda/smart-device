@@ -4,13 +4,24 @@ const changeVisibility = () => {
     button.addEventListener('click', function () {
       const elementClass = button.dataset.visibilityClass;
       const elements = document.querySelectorAll(`.${elementClass}`);
+      const elementsMobile = document.querySelectorAll(`.${elementClass}-tablet`);
       for (let element of elements) {
-        if (element.style.display === 'none') {
-          element.style.display = 'block';
+        if (element.classList.contains(`${elementClass}--closed`)) {
+          element.classList.remove(`${elementClass}--closed`);
+          element.classList.add(`${elementClass}--opened`);
           button.innerHTML = 'Свернуть';
+          elementsMobile.forEach((el) => {
+            el.classList.remove(`${elementClass}-tablet--closed`);
+            el.classList.add(`${elementClass}-tablet--opened`);
+          });
         } else {
-          element.style.display = 'none';
+          element.classList.add(`${elementClass}--closed`);
+          element.classList.remove(`${elementClass}--opened`);
           button.innerHTML = 'Подробнее';
+          elementsMobile.forEach((el) => {
+            el.classList.remove(`${elementClass}-tablet--opened`);
+            el.classList.add(`${elementClass}-tablet--closed`);
+          });
         }
       }
     });

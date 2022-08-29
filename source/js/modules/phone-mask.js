@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 import IMask from 'imask';
 
 const inputElements = document.querySelectorAll('input[type="tel"]');
