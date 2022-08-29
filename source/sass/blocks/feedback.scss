@@ -1,7 +1,17 @@
 .feedback {
-  padding-top: 170px;
+  padding-top: 165px;
   padding-bottom: 250px;
-  background: linear-gradient(-45deg, $color-deep-sky-blue-2 72%, $color-cerulean 72%);
+  background: linear-gradient(139deg, $color-cerulean 640px, $color-deep-sky-blue-2 640px);
+
+  @include vp-1023 {
+    padding-top: 45px;
+    padding-bottom: 125px;
+    background: $color-deep-sky-blue-2;
+  }
+
+  @include vp-767 {
+    padding-bottom: 90px;
+  }
 }
 
 .feedback__wrapper {
@@ -10,11 +20,15 @@
 }
 
 .feedback__wrapper img {
-  margin-right: 115px;
-}
+  min-width: 510px;
+  width: 510px;
+  height: 285px;
+  margin-top: 25px;
+  margin-right: 118px;
 
-.feedback__content {
-
+  @include vp-1023 {
+    display: none;
+  }
 }
 
 .feedback__content h2 {
@@ -26,6 +40,16 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-white;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 9px;
+  }
 }
 
 .feedback__content p {
@@ -37,4 +61,58 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 33px;
+  }
 }
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin-right: 10px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__form .input-textarea {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin-bottom: 15px;
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.feedback__form .input-checkbox {
+  margin-top: 13px;
+  margin-left: 11px;
+
+  @include vp-1023 {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+
