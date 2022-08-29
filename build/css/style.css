@@ -882,7 +882,7 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 15px;
+  padding: 20px 17px;
   width: 100%;
   height: 155px;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -965,9 +965,9 @@ button,
   position: relative;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  margin: 0 5px 0 0;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 0;
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -977,24 +977,24 @@ button,
 
 .input-checkbox span {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #f2f5f6;
+  border: 1px solid #ffffff;
 }
 
 .input-checkbox svg {
   display: none;
   position: absolute;
   top: 50%;
-  left: 9px;
+  left: 7px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 13px;
-  height: 13px;
+  width: 7px;
+  height: 4px;
   content: "";
 }
 
@@ -1003,15 +1003,18 @@ button,
 }
 
 .input-checkbox label {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-  color: #f2f5f6;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .input-checkbox input:hover ~ span,
 .input-checkbox input:focus ~ span {
-  outline: 5px solid #041827;
+  background-color: #026593;
 }
 
 .input-checkbox input:disabled ~ span,
@@ -1244,7 +1247,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding-top: 55px;
+  padding-top: 48px;
   padding-bottom: 55px;
 }
 
@@ -1267,12 +1270,13 @@ button,
 .footer__logo {
   width: 215px;
   height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .footer__social {
+  margin-left: 13px;
   width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1385,23 +1389,26 @@ button,
 }
 
 .footer__menu {
-  margin: 0 30px;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  margin: 8px 30px 0 30px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .footer__menu .footer__list {
-  width: 470px;
-  height: 130px;
+  width: 340px;
+  height: 145px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   -ms-flex-line-pack: justify;
   align-content: space-between;
 }
 
+.footer__menu .footer__item {
+  max-width: 220px;
+}
+
 .footer__menu a {
-  width: 220px;
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
@@ -1413,6 +1420,11 @@ button,
 
 .footer_button {
   display: none;
+}
+
+.footer__contacts {
+  margin-top: 7px;
+  width: 345px;
 }
 
 .main-screen {
@@ -1764,10 +1776,10 @@ button,
 }
 
 .feedback {
-  padding-top: 170px;
+  padding-top: 165px;
   padding-bottom: 250px;
-  background: -o-linear-gradient(135deg, #00b3ff 72%, #026593 72%);
-  background: linear-gradient(-45deg, #00b3ff 72%, #026593 72%);
+  background: -o-linear-gradient(311deg, #026593 640px, #00b3ff 640px);
+  background: linear-gradient(139deg, #026593 640px, #00b3ff 640px);
 }
 
 .feedback__wrapper {
@@ -1780,7 +1792,11 @@ button,
 }
 
 .feedback__wrapper img {
-  margin-right: 115px;
+  min-width: 510px;
+  width: 510px;
+  height: 285px;
+  margin-top: 25px;
+  margin-right: 118px;
 }
 
 .feedback__content h2 {
@@ -1805,6 +1821,31 @@ button,
   color: #ffffff;
 }
 
+.feedback__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  margin-right: 10px;
+}
+
+.feedback__form .input-textarea {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: -2;
+  grid-column-end: -1;
+  margin-bottom: 15px;
+}
+
+.feedback__form .input-checkbox {
+  margin-top: 13px;
+  margin-left: 11px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1827,6 +1868,10 @@ button,
 }
 
 @media (max-width: 1023px) {
+  .input-textarea textarea {
+    padding: 30px 15px;
+  }
+
   .header {
     position: relative;
   }
@@ -1881,11 +1926,16 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 
   .footer__logo {
     margin-bottom: 0;
+  }
+
+  .footer__social {
+    margin-top: 10px;
+    width: 140px;
   }
 
   .footer__menu,
@@ -1896,6 +1946,10 @@ button,
     flex-grow: 1;
   }
 
+  .footer__list {
+    row-gap: 8px;
+  }
+
   .footer__menu {
     margin: 0;
   }
@@ -1903,6 +1957,11 @@ button,
   .footer__menu .footer__list {
     width: 220px;
     height: auto;
+  }
+
+  .footer__contacts {
+    margin-top: 0;
+    padding-left: 13px;
   }
 
   .main-screen {
@@ -1948,8 +2007,16 @@ button,
     margin-bottom: 10px;
   }
 
+  .advantages__item--small svg {
+    margin-bottom: 8px;
+  }
+
   .advantages__item h2 {
     margin-bottom: 8px;
+  }
+
+  .advantages__item--small h2 {
+    margin-bottom: 3px;
   }
 
   .about {
@@ -1978,6 +2045,7 @@ button,
 
   .services {
     padding-top: 55px;
+    padding-bottom: 75px;
   }
 
   .services h2 {
@@ -2002,6 +2070,33 @@ button,
   .services__item h3 {
     width: 140px;
   }
+
+  .feedback {
+    padding-top: 45px;
+    padding-bottom: 125px;
+    background: #00b3ff;
+  }
+
+  .feedback__wrapper img {
+    display: none;
+  }
+
+  .feedback__content h2 {
+    margin-bottom: 7px;
+  }
+
+  .feedback__content p {
+    margin-bottom: 25px;
+  }
+
+  .feedback__form {
+    margin-right: 0;
+  }
+
+  .feedback__form .input-checkbox {
+    margin-top: 8px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2012,8 +2107,6 @@ button,
 
   .btn-primary {
     width: 100%;
-    font-size: 14px;
-    line-height: 16px;
   }
 
   .btn-second {
@@ -2028,10 +2121,9 @@ button,
     height: 35px;
   }
 
-  .input-checkbox {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+  .input-textarea textarea {
+    padding: 24px 15px;
+    height: 180px;
   }
 
   .input-checkbox input {
@@ -2088,11 +2180,15 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .footer__logo {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+  }
+
+  .footer__social {
+    margin-left: 0;
   }
 
   .footer__menu,
@@ -2113,13 +2209,19 @@ button,
   }
 
   .footer__title {
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     margin-bottom: 0;
   }
 
   .footer__list {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+    row-gap: 13px;
+  }
+
+  .footer__item {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .footer__menu .footer__list {
@@ -2130,7 +2232,7 @@ button,
     display: block;
     position: absolute;
     top: 20px;
-    right: 1px;
+    right: -5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -2160,6 +2262,7 @@ button,
 
   .footer__contacts {
     position: relative;
+    padding-left: 0;
   }
 
   .footer__contacts::after {
@@ -2216,7 +2319,7 @@ button,
   .advantages__item {
     width: 100%;
     min-height: 340px;
-    padding: 27px 35px 43px 30px;
+    padding: 30px 35px 43px 30px;
   }
 
   .advantages__item--small {
@@ -2226,11 +2329,17 @@ button,
   .advantages__item svg {
     width: 30px;
     height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .advantages__item--small svg {
+    margin-bottom: 10px;
   }
 
   .advantages__item h2 {
     font-size: 20px;
-    margin-bottom: 6px;
+    line-height: 31px;
+    margin-bottom: 8px;
   }
 
   .advantages__item p {
@@ -2264,6 +2373,7 @@ button,
 
   .services {
     padding-top: 48px;
+    padding-bottom: 85px;
   }
 
   .services h2 {
@@ -2290,5 +2400,40 @@ button,
   .services__arrow {
     width: 40px;
     height: 40px;
+  }
+
+  .feedback {
+    padding-bottom: 90px;
+  }
+
+  .feedback__content h2 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 9px;
+  }
+
+  .feedback__content p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 33px;
+  }
+
+  .feedback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .feedback__form .input-textarea {
+    margin-bottom: 10px;
+  }
+
+  .feedback__form .input-checkbox {
+    margin-top: 5px;
+    margin-left: 5px;
   }
 }

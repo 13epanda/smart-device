@@ -41,7 +41,7 @@
   @include vp-767 {
     width: 100%;
     min-height: 340px;
-    padding: 27px 35px 43px 30px;
+    padding: 30px 35px 43px 30px;
   }
 
   &::before {
@@ -77,12 +77,23 @@
   @include vp-767 {
     width: 30px;
     height: 30px;
+    margin-bottom: 8px;
   }
 }
 
 .advantages__item:hover svg,
 .advantages__item:focus svg {
   fill: $color-alice-blue;
+}
+
+.advantages__item--small svg {
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__item h2 {
@@ -101,7 +112,14 @@
 
   @include vp-767 {
     font-size: 20px;
-    margin-bottom: 6px;
+    line-height: 31px;
+    margin-bottom: 8px;
+  }
+}
+
+.advantages__item--small h2 {
+  @include vp-1023 {
+    margin-bottom: 3px;
   }
 }
 

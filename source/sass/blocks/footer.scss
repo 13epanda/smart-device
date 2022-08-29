@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 55px;
+  padding-top: 48px;
   padding-bottom: 55px;
 
   @include vp-1023 {
@@ -36,21 +36,21 @@
     flex-shrink: 0;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 
   @include vp-767 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
 .footer__logo {
   width: 215px;
   height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   flex-shrink: 0;
 
   @include vp-1023 {
@@ -58,11 +58,12 @@
   }
 
   @include vp-767 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }
 
 .footer__social {
+  margin-left: 13px;
   width: 150px;
   display: flex;
   justify-content: space-between;
@@ -71,6 +72,15 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+
+  @include vp-1023 {
+    margin-top: 10px;
+    width: 140px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .footer__social-item {
@@ -134,8 +144,8 @@
   color: $color-white;
 
   @include vp-767 {
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     margin-bottom: 0;
   }
 }
@@ -151,8 +161,13 @@
   margin-block-start: 0;
   margin-block-end: 0;
 
+  @include vp-1023 {
+    row-gap: 8px;
+  }
+
   @include vp-767 {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+    row-gap: 13px;
   }
 }
 
@@ -164,11 +179,15 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-white-transparent-70;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .footer__menu {
-  margin: 0 30px;
-  flex-grow: 1;
+  margin: 8px 30px 0 30px;
   flex-shrink: 0;
 
   @include vp-1023 {
@@ -177,8 +196,9 @@
 }
 
 .footer__menu .footer__list {
-  width: 470px;
-  height: 130px;
+  width: 340px;
+  height: 145px;
+  column-gap: 30px;
   align-content: space-between;
 
   @include vp-1023 {
@@ -191,8 +211,11 @@
   }
 }
 
+.footer__menu .footer__item {
+  max-width: 220px;
+}
+
 .footer__menu a {
-  width: 220px;
   color: $color-white-transparent-70;
   cursor: pointer;
 
@@ -211,7 +234,7 @@
     display: block;
     position: absolute;
     top: 20px;
-    right: 1px;
+    right: -5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -249,8 +272,17 @@
 }
 
 .footer__contacts {
+  margin-top: 7px;
+  width: 345px;
+
+  @include vp-1023 {
+    margin-top: 0;
+    padding-left: 13px;
+  }
+
   @include vp-767 {
     position: relative;
+    padding-left: 0;
 
     &::after {
       position: absolute;
