@@ -15,16 +15,20 @@
 }
 
 .feedback__wrapper {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 595px;
+  column-gap: 115px;
+
+  @include vp-1023 {
+    display: flex;
+    justify-content: center;
+    column-gap: 0;
+  }
 }
 
 .feedback__wrapper img {
-  min-width: 510px;
-  width: 510px;
-  height: 285px;
-  margin-top: 25px;
-  margin-right: 118px;
+  margin-top: 82px;
+  object-fit: cover;
 
   @include vp-1023 {
     display: none;
