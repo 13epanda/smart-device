@@ -229,11 +229,11 @@
   }
 }
 
-.footer_button {
+.footer__button {
   display: none;
 }
 
-.footer_button--mobile {
+.footer__button--mobile {
   @include vp-767 {
     display: block;
     position: absolute;
@@ -245,31 +245,31 @@
   }
 }
 
-.footer_button--mobile .footer__opened {
+.footer__button--mobile .footer__opened {
   @include vp-767 {
     display: none;
   }
 }
 
-.footer_button--mobile ~ .footer__list {
+.footer__button--mobile ~ .footer__list {
   @include vp-767 {
     display: none;
   }
 }
 
-.footer_button--active .footer__closed {
+.footer__button--active .footer__closed {
   @include vp-767 {
     display: none;
   }
 }
 
-.footer_button--active .footer__opened {
+.footer__button--active .footer__opened {
   @include vp-767 {
     display: block;
   }
 }
 
-.footer_button--active ~ .footer__list {
+.footer__button--active ~ .footer__list {
   @include vp-767 {
     display: flex;
   }

@@ -1,10 +1,16 @@
 const changeVisibility = () => {
   const buttons = document.querySelectorAll('.btn-full');
   for (let button of buttons) {
+    const elementClass = button.dataset.visibilityClass;
+    const elements = document.querySelectorAll(`.${elementClass}`);
+    const elementsMobile = document.querySelectorAll(`.${elementClass}-tablet`);
+    elements.forEach((el) => {
+      el.classList.add(`${elementClass}--closed`);
+    });
+    elementsMobile.forEach((el) => {
+      el.classList.add(`${elementClass}-tablet--closed`);
+    });
     button.addEventListener('click', function () {
-      const elementClass = button.dataset.visibilityClass;
-      const elements = document.querySelectorAll(`.${elementClass}`);
-      const elementsMobile = document.querySelectorAll(`.${elementClass}-tablet`);
       for (let element of elements) {
         if (element.classList.contains(`${elementClass}--closed`)) {
           element.classList.remove(`${elementClass}--closed`);

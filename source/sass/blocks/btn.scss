@@ -106,6 +106,9 @@
 .btn-third {
   width: 160px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;

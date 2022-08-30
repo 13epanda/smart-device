@@ -732,6 +732,15 @@ button,
 .btn-third {
   width: 160px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1472,7 +1481,7 @@ button,
   outline: none;
 }
 
-.footer_button {
+.footer__button {
   display: none;
 }
 
@@ -2336,7 +2345,7 @@ button,
     width: 100%;
   }
 
-  .footer_button--mobile {
+  .footer__button--mobile {
     display: block;
     position: absolute;
     top: 20px;
@@ -2346,23 +2355,23 @@ button,
     cursor: pointer;
   }
 
-  .footer_button--mobile .footer__opened {
+  .footer__button--mobile .footer__opened {
     display: none;
   }
 
-  .footer_button--mobile ~ .footer__list {
+  .footer__button--mobile ~ .footer__list {
     display: none;
   }
 
-  .footer_button--active .footer__closed {
+  .footer__button--active .footer__closed {
     display: none;
   }
 
-  .footer_button--active .footer__opened {
+  .footer__button--active .footer__opened {
     display: block;
   }
 
-  .footer_button--active ~ .footer__list {
+  .footer__button--active ~ .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

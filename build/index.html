@@ -22,6 +22,7 @@
     <div class="wrapper">
       <header>
         <section class="header">
+          <h2 class="visually-hidden">Шапка сайта.</h2>
           <div class="header__wrapper container">
             <a class="header__logo">
               <picture>
@@ -47,7 +48,7 @@
                 </a>
               </li>
             </ul>
-            <button class="header__button btn-third" type="button" data-open-modal="feedback">Заказать звонок</button>
+            <a class="header__button btn-third" href="#feedback" aria-label="Перейти на форму заявки." data-open-modal="feedback">Заказать звонок</a>
           </div>
         </section>
       </header>
@@ -128,12 +129,12 @@
               <h2>О компании</h2>
               <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
               <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                <span class="about__full-tablet about__full-tablet--closed">
+                <span class="about__full-tablet">
                   Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
                 </span>
               </p>
-              <p class="about__full about__full--closed">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день.</p>
-              <p class="about__full about__full--closed">На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+              <p class="about__full">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день.</p>
+              <p class="about__full">На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
               <button class="btn-fourth btn-full" data-visibility-class="about__full">Подробнее</button>
             </div>
           </div>
@@ -283,10 +284,10 @@
               <h3 class="footer__title">Разделы сайта</h3>
               <!--
                  При инициализации accordion.js
-                 добавляются классы footer_button--mobile и footer_button--closed
-                 при клике на кнопку класс меняется на footer_button--opened и обратно
+                 добавляются классы footer__button--mobile и footer__button--closed
+                 при клике на кнопку класс меняется на footer__button--opened и обратно
                -->
-              <button class="footer_button">
+              <button class="footer__button">
                 <span class="footer__closed">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#plus"></use>
@@ -326,10 +327,10 @@
               <h3 class="footer__title">Наш офис</h3>
               <!--
                  При инициализации accordion.js
-                 добавляются классы footer_button--mobile и footer_button--closed
-                 при клике на кнопку класс меняется на footer_button--opened и обратно
+                 добавляются классы footer__button--mobile и footer__button--closed
+                 при клике на кнопку класс меняется на footer__button--opened и обратно
                -->
-              <button class="footer_button">
+              <button class="footer__button">
                 <span class="footer__closed">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#plus"></use>
@@ -385,7 +386,7 @@
           </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+              <use xlink:href="img/sprite_auto.svg#cross"></use>
             </svg>
           </button>
         </div>
