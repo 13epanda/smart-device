@@ -1,0 +1,59 @@
+.call-back {
+  padding: 40px;
+  background-color: $color-deep-sky-blue-2;
+}
+
+.call-back h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: $color-white;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 9px;
+  }
+}
+
+.call-back p {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 33px;
+  }
+}
+
+.call-back__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.call-back__button {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.call-back__input-checkbox {
+  margin-left: 10px;
+}

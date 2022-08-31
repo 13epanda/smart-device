@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="Производство и монтаж печатных плат, поставка комплектующих, блоков и модулей.">
     <title>Smart Device</title>
 
     <link rel="preload" href="fonts/ptmono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -48,7 +48,7 @@
                 </a>
               </li>
             </ul>
-            <a class="header__button btn-third" href="#feedback" aria-label="Перейти на форму заявки." data-open-modal="feedback">Заказать звонок</a>
+            <a class="header__button btn-third" href="call-back.html" aria-label="Перейти на форму заявки." data-open-modal="feedback">Заказать звонок</a>
           </div>
         </section>
       </header>
@@ -358,30 +358,30 @@
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
+        <div class="modal__content call-back">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="modal__input input-text">
-              <label class="visually-hidden" for="user-name">Имя</label>
+          <form class="call-back__form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="call-back__input input-text">
+              <label class="visually-hidden" for="call-name">Имя</label>
               <input id="call-name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" title="Имя не должно быть короче двух букв." required>
             </div>
-            <div class="modal__input input-text">
-              <label class="visually-hidden" for="phone">Телефон</label>
+            <div class="call-back__input input-text">
+              <label class="visually-hidden" for="call-phone">Телефон</label>
               <input id="call-phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7[\(]\d{3}[\)]\d{3}[-]\d{2}[-]\d{2}" title="Используйте формат: +7(123)456-78-90." required>
             </div>
-            <div class="modal__input input-textarea">
+            <div class="call-back__input input-textarea">
               <label class="visually-hidden" for="call-question">Ваш вопрос</label>
               <textarea id="call-question" rows="5" name="question" placeholder="Ваш вопрос"></textarea>
             </div>
-            <button class="btn-primary modal__button" type="submit">Отправить</button>
-            <div class="modal__input-checkbox input-checkbox">
+            <button class="btn-primary call-back__button" type="submit">Отправить</button>
+            <div class="call-back__input-checkbox input-checkbox">
               <input id="call-privacy" type="checkbox" name="consent" required>
               <span></span>
               <svg width="7" height="4">
                 <use xlink:href="img/sprite_auto.svg#mark"></use>
               </svg>
-              <label for="privacy">Я согласен на&nbsp;обработку персональных данных</label>
+              <label for="call-privacy">Я согласен на&nbsp;обработку персональных данных</label>
             </div>
           </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
