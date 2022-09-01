@@ -7,7 +7,7 @@
     padding-bottom: 40px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -38,7 +38,7 @@
     width: calc(50% - 14px);
   }
 
-  @include vp-767 {
+  @include vp-769 {
     width: 100%;
     min-height: 340px;
     padding: 30px 35px 43px 30px;
@@ -62,7 +62,7 @@
 }
 
 .advantages__item--small {
-  @include vp-767 {
+  @include vp-769 {
     min-height: 325px;
   }
 }
@@ -74,7 +74,7 @@
     margin-bottom: 10px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     width: 30px;
     height: 30px;
     margin-bottom: 8px;
@@ -91,7 +91,7 @@
     margin-bottom: 8px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-bottom: 10px;
   }
 }
@@ -110,7 +110,7 @@
     margin-bottom: 8px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     font-size: 20px;
     line-height: 31px;
     margin-bottom: 8px;
@@ -133,7 +133,7 @@
   line-height: 22px;
   color: $color-black-pearl;
 
-  @include vp-767 {
+  @include vp-769 {
     font-size: 14px;
     line-height: 19px;
   }

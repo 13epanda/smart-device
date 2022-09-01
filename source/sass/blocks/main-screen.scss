@@ -9,7 +9,7 @@
     min-height: 640px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-top: -70px;
     margin-bottom: 25px;
     min-height: 560px;
@@ -33,7 +33,7 @@
     min-height: 640px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     min-height: 560px;
   }
 }
@@ -55,7 +55,7 @@
     padding-left: 0;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     padding-top: 150px;
   }
 }
@@ -78,7 +78,7 @@
     line-height: 75px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-bottom: 8px;
     font-size: 36px;
     line-height: 42px;
@@ -100,7 +100,7 @@
     margin-bottom: 58px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-bottom: 43px;
     font-size: 14px;
     line-height: 22px;
@@ -126,7 +126,7 @@
     text-transform: uppercase;
     color: $color-alice-blue;
 
-    @include vp-767 {
+    @include vp-769 {
       content: "Бесплатная консультация";
       font-size: 14px;
       line-height: 16px;
@@ -137,7 +137,7 @@
     margin-left: 45px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-left: 0;
   }
 }

@@ -16,7 +16,7 @@
     padding-bottom: 65px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     flex-direction: column;
     align-content: flex-start;
     padding-top: 35px;
@@ -39,7 +39,7 @@
     margin-bottom: 38px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -57,7 +57,7 @@
     margin-bottom: 0;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-bottom: 8px;
   }
 }
@@ -80,7 +80,7 @@
     width: 140px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     margin-left: 0;
   }
 }
@@ -118,7 +118,7 @@
     flex-grow: 1;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     position: relative;
     width: 100%;
 
@@ -146,7 +146,7 @@
   text-transform: uppercase;
   color: $color-white;
 
-  @include vp-767 {
+  @include vp-769 {
     padding-top: 22px;
     padding-bottom: 22px;
     margin-bottom: 0;
@@ -168,7 +168,7 @@
     row-gap: 8px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     padding-bottom: 18px;
     row-gap: 13px;
   }
@@ -183,7 +183,7 @@
   line-height: 22px;
   color: $color-white-transparent-70;
 
-  @include vp-767 {
+  @include vp-769 {
     font-size: 14px;
     line-height: 20px;
   }
@@ -209,7 +209,7 @@
     height: auto;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     width: 100%;
   }
 }
@@ -234,7 +234,7 @@
 }
 
 .footer__button--mobile {
-  @include vp-767 {
+  @include vp-769 {
     display: block;
     position: absolute;
     top: 20px;
@@ -246,31 +246,31 @@
 }
 
 .footer__button--mobile .footer__opened {
-  @include vp-767 {
+  @include vp-769 {
     display: none;
   }
 }
 
 .footer__button--mobile ~ .footer__list {
-  @include vp-767 {
+  @include vp-769 {
     display: none;
   }
 }
 
 .footer__button--active .footer__closed {
-  @include vp-767 {
+  @include vp-769 {
     display: none;
   }
 }
 
 .footer__button--active .footer__opened {
-  @include vp-767 {
+  @include vp-769 {
     display: block;
   }
 }
 
 .footer__button--active ~ .footer__list {
-  @include vp-767 {
+  @include vp-769 {
     display: flex;
   }
 }
@@ -284,7 +284,7 @@
     padding-left: 13px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     position: relative;
     padding-left: 0;
 
