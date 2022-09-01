@@ -1374,22 +1374,6 @@ button,
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  row-gap: 10px;
   -webkit-padding-start: 0;
   padding-inline-start: 0;
   -webkit-margin-before: 0;
@@ -1399,6 +1383,7 @@ button,
 }
 
 .footer__item {
+  margin-bottom: 10px;
   list-style-type: none;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -1409,19 +1394,22 @@ button,
 }
 
 .footer__menu {
-  margin: 8px 30px 0 30px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 .footer__menu .footer__list {
-  width: 340px;
-  height: 145px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
+  -webkit-column-fill: auto;
+  -moz-column-fill: auto;
+  column-fill: auto;
+  min-height: 155px;
 }
 
 .footer__menu .footer__item {
@@ -2041,7 +2029,25 @@ button,
   }
 
   .footer__list {
-    row-gap: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__item {
+    margin-bottom: 8px;
   }
 
   .footer__menu {
@@ -2328,12 +2334,8 @@ button,
     margin-bottom: 0;
   }
 
-  .footer__list {
-    padding-bottom: 18px;
-    row-gap: 13px;
-  }
-
   .footer__item {
+    margin-bottom: 13px;
     font-size: 14px;
     line-height: 20px;
   }
