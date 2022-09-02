@@ -22,6 +22,11 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+
+  @include vp-769 {
+    row-gap: 0;
+    margin-bottom: -30px;
+  }
 }
 
 .advantages__item {
@@ -41,6 +46,7 @@
   @include vp-769 {
     width: 100%;
     min-height: 340px;
+    margin-bottom: 30px;
     padding: 30px 35px 43px 30px;
   }
 

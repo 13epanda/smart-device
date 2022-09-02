@@ -1855,12 +1855,20 @@ button,
   margin-right: 10px;
 }
 
+.feedback__input {
+  margin-bottom: 20px;
+}
+
 .feedback__form .input-textarea {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-span: -2;
   grid-column-end: -1;
   margin-bottom: 15px;
+}
+
+.feedback__form .feedback__button {
+  margin-bottom: 20px;
 }
 
 .feedback__form .input-checkbox {
@@ -2308,7 +2316,18 @@ button,
   }
 
   .footer__social {
-    margin-left: 0;
+    row-gap: 0;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    margin-right: -12px;
+    margin-bottom: -10px;
+    margin-left: -12px;
+    width: 162px;
+  }
+
+  .footer__social-item {
+    margin: 0 12px 10px;
   }
 
   .footer__menu,
@@ -2432,9 +2451,15 @@ button,
     padding-bottom: 25px;
   }
 
+  .advantages__list {
+    row-gap: 0;
+    margin-bottom: -30px;
+  }
+
   .advantages__item {
     width: 100%;
     min-height: 340px;
+    margin-bottom: 30px;
     padding: 30px 35px 43px 30px;
   }
 
@@ -2503,6 +2528,15 @@ button,
     line-height: 39px;
   }
 
+  .services__list {
+    row-gap: 0;
+    margin-bottom: -30px;
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+  }
+
   .services__link {
     padding-top: 25px;
     padding-left: 30px;
@@ -2542,10 +2576,12 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 0;
+    margin-bottom: -20px;
   }
 
   .feedback__form .input-textarea {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .feedback__form .input-checkbox {

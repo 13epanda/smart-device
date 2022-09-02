@@ -81,12 +81,21 @@
   }
 
   @include vp-769 {
-    margin-left: 0;
+    row-gap: 0;
+    column-gap: 0;
+    margin-right: -12px;
+    margin-bottom: -10px;
+    margin-left: -12px;
+    width: 162px;
   }
 }
 
 .footer__social-item {
   list-style-type: none;
+
+  @include vp-769 {
+    margin: 0 12px 10px;
+  }
 }
 
 .footer__social-item a {

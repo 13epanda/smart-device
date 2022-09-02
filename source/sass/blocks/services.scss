@@ -57,6 +57,11 @@
   @include vp-1023 {
     row-gap: 30px;
   }
+
+  @include vp-769 {
+    row-gap: 0;
+    margin-bottom: -30px;
+  }
 }
 
 .services__item {
@@ -64,6 +69,10 @@
 
   @include vp-1023 {
     width: 100%;
+  }
+
+  @include vp-769 {
+    margin-bottom: 30px;
   }
 }
 
