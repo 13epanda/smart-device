@@ -670,7 +670,7 @@ button,
   display: block;
   width: 265px;
   min-height: 45px;
-  padding: 15px 25px;
+  padding: 15px 25px 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1288,13 +1288,13 @@ button,
 .footer__logo {
   width: 215px;
   height: 55px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .footer__social {
-  margin-left: 13px;
+  margin-left: 10px;
   width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1365,7 +1365,7 @@ button,
 
 .footer__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1386,7 +1386,7 @@ button,
 }
 
 .footer__item {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   list-style-type: none;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -1826,7 +1826,7 @@ button,
 
 .feedback {
   padding-top: 165px;
-  padding-bottom: 250px;
+  padding-bottom: 230px;
   background: -o-linear-gradient(311deg, #026593 640px, #00b3ff 640px);
   background: linear-gradient(139deg, #026593 640px, #00b3ff 640px);
 }
@@ -1861,6 +1861,7 @@ button,
 .feedback__content p {
   margin-top: 0;
   margin-bottom: 35px;
+  margin-left: 5px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1879,6 +1880,7 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   margin-right: 10px;
+  margin-left: 5px;
 }
 
 .feedback__form .input-textarea {
@@ -1886,10 +1888,10 @@ button,
   grid-column-start: 1;
   -ms-grid-column-span: -2;
   grid-column-end: -1;
-  margin-bottom: 15px;
 }
 
 .feedback__form .feedback__button {
+  margin-top: 13px;
   margin-bottom: 20px;
 }
 
@@ -2209,7 +2211,7 @@ button,
 
   .feedback {
     padding-top: 45px;
-    padding-bottom: 125px;
+    padding-bottom: 110px;
     background: #00b3ff;
   }
 
@@ -2234,11 +2236,18 @@ button,
   }
 
   .feedback__content p {
+    margin-left: 0;
     margin-bottom: 25px;
   }
 
   .feedback__form {
+    margin-left: 0;
     margin-right: 0;
+  }
+
+  .feedback__form .feedback__button {
+    margin-top: 17px;
+    margin-bottom: 13px;
   }
 
   .feedback__form .input-checkbox {
@@ -2268,7 +2277,7 @@ button,
   .btn-second {
     width: 100%;
     min-height: 40px;
-    padding: 10px 30px;
+    padding: 13px 30px 10px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -2536,7 +2545,7 @@ button,
 
   .about {
     padding-top: 22px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
 
   .about__wrapper img {
@@ -2559,7 +2568,7 @@ button,
   }
 
   .services {
-    padding-top: 48px;
+    padding-top: 46px;
     padding-bottom: 85px;
   }
 
@@ -2599,13 +2608,13 @@ button,
   }
 
   .feedback {
-    padding-bottom: 90px;
+    padding-bottom: 88px;
   }
 
   .feedback__content h2 {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   .feedback__content p {
@@ -2632,6 +2641,11 @@ button,
 
   .feedback__form .input-textarea {
     margin-bottom: 30px;
+  }
+
+  .feedback__form .feedback__button {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .feedback__form .input-checkbox {

@@ -33,7 +33,7 @@
   display: block;
   width: 265px;
   min-height: 45px;
-  padding: 15px 25px;
+  padding: 15px 25px 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -87,7 +87,7 @@
   @include vp-769 {
     width: 100%;
     min-height: 40px;
-    padding: 10px 30px;
+    padding: 13px 30px 10px;
     font-size: 14px;
     line-height: 16px;
   }

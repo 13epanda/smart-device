@@ -50,7 +50,7 @@
 .footer__logo {
   width: 215px;
   height: 55px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   flex-shrink: 0;
 
   @include vp-1023 {
@@ -63,7 +63,7 @@
 }
 
 .footer__social {
-  margin-left: 13px;
+  margin-left: 10px;
   width: 150px;
   display: flex;
   justify-content: center;
@@ -145,7 +145,7 @@
 
 .footer__title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -177,7 +177,7 @@
 }
 
 .footer__item {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   list-style-type: none;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
