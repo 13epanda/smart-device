@@ -248,6 +248,14 @@
   }
 }
 
+.footer__menu .footer__item:last-child {
+  margin-bottom: 50px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+}
+
 .footer__menu a {
   color: $color-white-transparent-70;
   cursor: pointer;

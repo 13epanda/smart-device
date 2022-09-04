@@ -1429,6 +1429,10 @@ button,
   max-width: 220px;
 }
 
+.footer__menu .footer__item:last-child {
+  margin-bottom: 50px;
+}
+
 .footer__menu a {
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
@@ -2083,6 +2087,10 @@ button,
   .footer__menu .footer__list {
     width: 220px;
     height: auto;
+  }
+
+  .footer__menu .footer__item:last-child {
+    margin-bottom: 0;
   }
 
   .footer__contacts {
