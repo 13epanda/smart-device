@@ -59,7 +59,7 @@
             <form class="call-back__form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="call-back__input input-text">
                 <label class="visually-hidden" for="call-name">Имя</label>
-                <input id="call-name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{2,}" title="Имя не должно быть короче двух букв." required>
+                <input id="call-name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s-]{2,}" title="Имя не должно быть короче двух букв." required>
               </div>
               <div class="call-back__input input-text">
                 <label class="visually-hidden" for="call-phone">Телефон</label>
@@ -145,9 +145,15 @@
               <h3 class="footer__title">Наш офис</h3>
               <ul class="footer__list">
                 <li class="footer__item">г. Мытищи, Олимпийский проспект, д.10</li>
-                <li class="footer__item">+7 (495) 589-40-50</li>
-                <li class="footer__item">+7 (925) 389-58-29</li>
-                <li class="footer__item">+7 (925) 364-78-13</li>
+                <li class="footer__item">
+                  <a class="footer__phone" href="tel:+74955894050" aria-label="Наш телефон: +7 (495) 589-40-50.">+7 (495) 589-40-50</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__phone" href="tel:+79253895829" aria-label="Наш телефон: +7 (925) 389-58-29.">+7 (925) 389-58-29</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__phone" href="tel:+79253647813" aria-label="Наш телефон: +7 (925) 364-78-13.">+7 (925) 364-78-13</a>
+                </li>
               </ul>
             </div>
           </div>

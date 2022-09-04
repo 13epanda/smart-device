@@ -194,6 +194,22 @@
     margin-bottom: 13px;
     font-size: 14px;
     line-height: 20px;
+    width: 100%;
+  }
+}
+
+.footer__phone {
+  margin: 0;
+  color: $color-white-transparent-70;
+
+  @include vp-769 {
+    width: 100%;
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-deep-sky-blue;
   }
 }
 
@@ -225,11 +241,21 @@
 
 .footer__menu .footer__item {
   max-width: 220px;
+
+  @include vp-769 {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .footer__menu a {
   color: $color-white-transparent-70;
   cursor: pointer;
+
+  @include vp-769 {
+    display: block;
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
