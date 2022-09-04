@@ -109,6 +109,7 @@
   box-sizing: border-box;
   opacity: 0;
   z-index: 1;
+  cursor: pointer;
 
   @include vp-769 {
     margin-right: 10px;

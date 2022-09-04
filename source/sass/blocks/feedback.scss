@@ -97,7 +97,9 @@
 }
 
 .feedback__input {
-  margin-bottom: 20px;
+  @include vp-769 {
+    margin-bottom: 20px;
+  }
 }
 
 .feedback__form .input-textarea {
